@@ -6,25 +6,25 @@ function App() {
     {
       title: "Moneta-Flow",
       description: "Plataforma completa para administrar tu dinero de manera efectiva e inteligente.",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/images/MonetaFlow.png",
       technologies: ["React", "Node.js", "MongoDB", "Stripe"],
       github: "https://github.com/usuario/ecommerce",
       demo: "https://ecommerce-demo.com",
       featured: true,
     },
     {
-      title: "Taski",
-      description: "Aplicación de gestión de tareas con colaboración en tiempo real y notificaciones.",
-      image: "/placeholder.svg?height=200&width=300",
-      technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-      github: "https://github.com/usuario/task-app",
-      demo: "https://task-app-demo.com",
+      title: "Pomodoro App",
+      description: "Aplicación para creada para poder tener una gestión de tiempo basada en la división de tiempo para una mejor productividad",
+      image: "/images/PomodoroZen.png",
+      technologies: ["Reac js", "Javascript", "Vite", "Tailwindcss"],
+      github: "https://github.com/thejuanco/React-Pomodoro-Timer.git",
+      demo: "https://pomodorozen.netlify.app/",
       featured: true,
     },
     {
       title: "App Móvil Clima",
       description: "Aplicación móvil del clima que muestra el clima según la ciudad consultada y alertas climaticas.",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/images/PomodoroZen.png",
       technologies: ["Vue.js", "Chart.js", "OpenWeather API"],
       github: "https://github.com/usuario/weather-app",
       demo: "https://weather-dashboard-demo.com",
@@ -138,38 +138,45 @@ function App() {
           </div>
           <div className="grid gap-8 mx-8 md:grid-cols-2">
             {projects.filter((project) => project.featured).map((project, index) => (
-              <div key={index} className="overflow-hidden">
-                <div>
-                  Imagen aqui
+              <div key={index} className="overflow-hidden rounded-xl border border-gray-300">
+                <div className="aspect-video relative overflow-hidden">
+                  <img 
+                    src={project.image || "/Placeholder.svg"}
+                    alt={project.title}
+                    fill
+                    className="object-cover transition-transform hover:scale-105"
+                  />
                 </div>
-                <div className="flex items-start space-y-2 justify-between">
-                  <div className="space-y-2">
-                    <h2 className="font-medium text-xl">{project.title}</h2>
+                <div className="m-6">
+                  <div className="flex items-start space-y-2 justify-between">
+                    <div className="space-y-2">
+                      <h2 className="font-medium text-xl">{project.title}</h2>
+                    </div>
+                    <span className="font-medium text-sm rounded-full px-1 bg-slate-200">Destacado</span>
                   </div>
-                  <span className="font-medium text-sm rounded-full px-1 bg-slate-200">Destacado</span>
-                </div>
-                <p className="text-slate-500">{project.description}</p>
-                <div className="space-y-4 mt-3">
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, techIndex) => (
-                      <div key={techIndex} className="px-2 border border-gray-200 rounded-full">
-                        {tech}
-                      </div>
-                    ))}
-                  </div>
-                  <div className="flex flex-row">
-                    <button className="flex items-center gap-2 bg-slate-900 text-slate-200 px-3 py-1 rounded-full mr-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                      </svg>
-                      Demo
-                    </button>
-                    <button className="flex items-center gap-2 bg-slate-100 text-slate-900 border border-gray-200 px-3 py-1 rounded-full">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
-                      </svg>
-                      Código
-                    </button>
+                  <p className="text-slate-500">{project.description}</p>
+                  <div className="space-y-4 mt-3">
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech, techIndex) => (
+                        <div key={techIndex} className="px-2 border border-gray-200 rounded-full">
+                          {tech}
+                        </div>
+                      ))}
+                    </div>
+                    <div className="flex flex-row">
+                      <button className="flex items-center gap-2 bg-slate-900 text-slate-200 px-3 py-1 rounded-full mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                        </svg>
+                        Demo
+                      </button>
+                      <button className="flex items-center gap-2 bg-slate-100 text-slate-900 border border-gray-200 px-3 py-1 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                        </svg>
+                        Código
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
