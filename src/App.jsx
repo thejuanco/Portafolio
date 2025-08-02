@@ -152,7 +152,9 @@ function App() {
                     <div className="space-y-2">
                       <h2 className="font-medium text-xl">{project.title}</h2>
                     </div>
-                    <span className="font-medium text-sm rounded-full px-1 bg-slate-200">Destacado</span>
+                    <div className="font-medium text-sm rounded-full px-1 bg-green-100">
+                      <p className="text-green-900">En desarrollo</p>
+                    </div>
                   </div>
                   <p className="text-slate-500">{project.description}</p>
                   <div className="space-y-4 mt-3">
