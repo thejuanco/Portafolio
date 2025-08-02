@@ -43,17 +43,17 @@ function App() {
 
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen w-full">
       <nav className="sticky top-0 z-50 w-full border-b border-gray-300 backdrop-blur">
-        <div className="container flex h-14 items-center">
-          <div className="mx-8 flex space-x-1">
+        <div className="container flex h-14 items-center px-4 md:px-8">
+          <div className="flex space-x-1">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
             </svg>
             <span className="font-bold">Mi portafolio</span>
           </div>
           <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
-            <nav className="flex items-center space-x-6 mx-8 text-sm font-medium">
+            <nav className="flex items-center space-x-6 text-sm font-medium">
               <span href="#projects" className="hover:text-foreground/80">
                 Proyectos
               </span>
@@ -219,6 +219,19 @@ function App() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+      <section className="container py-24 bg-slate-100">
+        <div className="w-full bg-slage-100">
+          <h2 className="text-3xl text-center font-bold tracking-tighter sm:text-4xl md:text-5xl">Habilidades y Tecnologías</h2>
+
+        </div>
+      </section>
+
+      <section className="container py-24">
+        <div className="w-full bg-slage-100">
+          <h2 className="text-3xl text-center font-bold tracking-tighter sm:text-4xl md:text-5xl">¿Trabajamos juntos?</h2>
+
         </div>
       </section>
     </div>
