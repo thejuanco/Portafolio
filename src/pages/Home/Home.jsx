@@ -1,10 +1,11 @@
 import { Link } from "react-router";
 
 import NavBar from "../../components/NavBar";
+import Projects from "./components/Projects";
 
 const Home = () => {
   return (
-    <>
+    <div className="min-h-screen">
       <NavBar />
       <section className="py-24 md:py-32">
         <div className="flex flex-col items-center text-center space-y-8">
@@ -40,7 +41,7 @@ const Home = () => {
               </h1>
               <p className="mx-auto max-w-[700px] text-lg text-gray-500 sm:text-xl mt-6">
                 Desarrollador Full Stack apasionado por crear experiencias
-                digitales excepcionales. Especializado en React, Next.js y
+                digitales excepcionales. Con experiencia en React, Next.js, .NET, C#, SQL Server y
                 tecnologías modernas.
               </p>
             </div>
@@ -87,7 +88,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </>
+      <Projects/>
+    </div>
   );
 };
 
