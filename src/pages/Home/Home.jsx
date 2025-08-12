@@ -2,6 +2,7 @@ import { Link } from "react-router";
 
 import NavBar from "../../components/NavBar";
 import Projects from "./components/Projects";
+import SkillsAndTech from "./components/SkillsAndTech";
 
 const Home = () => {
   return (
@@ -89,6 +90,7 @@ const Home = () => {
         </div>
       </section>
       <Projects/>
+      <SkillsAndTech/>
     </div>
   );
 };

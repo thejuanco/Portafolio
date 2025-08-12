@@ -36,3 +36,23 @@ export const projects = [
     featured: false,
   },
 ];
+
+export const skills = [
+  {
+    category: "Frontend",
+    items: [
+      "React",
+      "Next.js",
+      "Vue.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "ASP.NET",
+    ],
+  },
+  {
+    category: "Backend",
+    items: ["Node.js", "Python", "Express", "FastAPI", "PostgreSQL", ".NET"],
+  },
+  { category: "Tools", items: ["Git", "Docker", "Team Foundation Server"] },
+  { category: "Mobile", items: ["React Native", "Flutter", "Kotlin"] },
+];
