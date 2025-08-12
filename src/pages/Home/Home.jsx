@@ -3,6 +3,8 @@ import { Link } from "react-router";
 import NavBar from "../../components/NavBar";
 import Projects from "./components/Projects";
 import SkillsAndTech from "./components/SkillsAndTech";
+import Contact from "./components/Contact";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
@@ -91,6 +93,8 @@ const Home = () => {
       </section>
       <Projects/>
       <SkillsAndTech/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 };
