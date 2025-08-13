@@ -49,10 +49,14 @@ const Home = () => {
               </p>
             </div>
             <div className="flex flex-col items-center justify-center sm:flex-row gap-4">
-              <button className="bg-gray-900 text-slate-200 py-2 px-4 rounded-full">
-                Ver Perfil en GitHub
-              </button>
-              <button className="flex items-center gap-2 bg-gray-100 text-slate-900 py-2 px-4 rounded-full">
+              <Link
+                to="https://github.com/thejuanco"
+                className="bg-gray-800 text-white font-medium py-2 px-4 block md:inline-block rounded-full hover:bg-gray-900 transition-transform duration-300 transform hover:scale-105"
+                target="_blank"
+              >
+                Ver Perfil de Github
+              </Link>
+              <button className="flex items-center gap-2 bg-gray-200 text-slate-900 font-medium py-2 px-4 rounded-full hover:bg-gray-300 transition-transform duration-300 transform hover:scale-105">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

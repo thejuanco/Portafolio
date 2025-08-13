@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 const Contact = () => {
   return (
     <section id="contact" className="py-28">
@@ -14,9 +16,13 @@ const Contact = () => {
             <button className="bg-gray-900 text-slate-200 py-2 px-4 rounded-full hover:bg-gray-800">
                 Enviar Correo
             </button>
-            <button className="flex items-center gap-2 border border-gray-300 hover:bg-gray-100 text-slate-900 py-2 px-4 rounded-full">
+            <Link 
+              className="flex items-center gap-2 border border-gray-300 hover:bg-gray-100 text-slate-900 py-2 px-4 rounded-full"
+              to="https://www.linkedin.com/in/juan-cruz-ortiz-b56607283/"
+              target="_blank"
+            >
                 LinkedIn
-            </button>
+            </Link>
         </div>
       </div>
     </section>
