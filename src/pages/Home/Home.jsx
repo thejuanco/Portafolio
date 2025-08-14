@@ -94,7 +94,7 @@ const Home = () => {
               </a>
             </div>
             <div className="flex items-center justify-center space-x-4">
-              <Link to="#" className="p-2 rounded-lg hover:bg-gray-100">
+              <Link to="/contact" className="p-2 rounded-lg hover:bg-gray-100">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
