@@ -75,7 +75,7 @@ const Home = () => {
                 </svg>
                 Ver Perfil en Github
               </Link>
-              <button className="flex items-center gap-2 bg-gray-200 text-slate-900 font-medium py-2 px-4 rounded-full hover:bg-gray-300 transition-transform duration-300 transform hover:scale-105">
+              <a href="/docs/CV_Juan_Manuel_Cruz.pdf" download="CV_Juan_Manuel_Cruz.pdf" className="flex items-center gap-2 bg-gray-200 text-slate-900 font-medium py-2 px-4 rounded-full hover:bg-gray-300 transition-transform duration-300 transform hover:scale-105">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -91,7 +91,7 @@ const Home = () => {
                   />
                 </svg>
                 Descargar CV
-              </button>
+              </a>
             </div>
             <div className="flex items-center justify-center space-x-4">
               <Link to="#" className="p-2 rounded-lg hover:bg-gray-100">
