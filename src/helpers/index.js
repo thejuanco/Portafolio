@@ -22,7 +22,7 @@ export const projects = [
     description: "Aplicación móvil del clima que muestra el clima según la ciudad consultada y alertas climaticas.",
     image: "/images/PomodoroZen.png",
     technologies: ["React Native", "React Native Paper", "OpenWeather API"],
-    github: "https://github.com/usuario/weather-app",
+    github: "https://github.com/thejuanco/Tiempo-y-Clima.git",
     demo: "https://weather-dashboard-demo.com",
     featured: false,
   },
