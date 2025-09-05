@@ -15,9 +15,9 @@ const NavBar = () => {
                     <Link to="/contact" className="hover:text-foreground/80">
                         Contáctame
                     </Link>
-                    <span href="#projects" className="hover:text-foreground/80">
-                        Proyectos
-                    </span>
+                    <Link to="/certifications" className="hover:text-foreground/80">
+                        Certificaciones
+                    </Link>
                     <span href="#projects" className="hover:text-foreground/80">
                         Habilidades
                     </span>

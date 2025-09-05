@@ -1,5 +1,12 @@
+import NavBar from "../../components/NavBar"
+
 export default function Certifications() {
   return (
-    <div>Certifications</div>
+    <>
+      <NavBar/>
+      <div>
+        Certificaciones
+      </div>
+    </>
   )
 }
