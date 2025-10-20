@@ -74,3 +74,18 @@ export const certifications = [
     featured: true,
   },
 ];
+
+export const education = [
+  {
+    degree: "Ingeniería en Desarrollo y Gestión de Software",
+    institution: "Universidad Tecnológica de Xicotepec de Júarez",
+    location: "Xicotepec de Júarez, México",
+    startDate: "2021",
+    endDate: "2015",
+    status: "Completado",
+    thesis: "Sistema de Gestión Inteligente de Recursos en la Nube",
+    description: "Programa enfocado en desarrollo de software, algoritmos y arquitectura de sistemas.",
+    skills: ["Programación", "Bases de Datos", "Algoritmos", "Redes", "Arquitectura de Software"],
+    logo: "/placeholder.svg?height=60&width=60&text=UTN",
+  },
+]
