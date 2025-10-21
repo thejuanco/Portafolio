@@ -1,4 +1,5 @@
 import NavBar from "../../components/NavBar"
+import CertificationsCard from "./components/CertificationsCard"
 
 export default function Certifications() {
   return (
@@ -24,6 +25,7 @@ export default function Certifications() {
                 Certificaciones oficiales, licencias y credenciales que validan mi experiencia y conocimientos técnicos en desarrollo de software y tecnologías en la nube.
               </p>
             </div>
+            <CertificationsCard/>
           </div>
         </div>
       </div>

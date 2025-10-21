@@ -73,6 +73,21 @@ export const certifications = [
     logo: "",
     featured: true,
   },
+  {
+    title: "JavaScript Moderno Guía Definitiva Construye +20 Proyectos",
+    issuer: "Udemy",
+    date: "2025",
+    expiryDate: "2035",
+    numberReference: "0004",
+    status: "Activa",
+    description:
+      "Curso sobre Javascript.",
+    skills: ["Javascript", "Javascript DOM", "POO", "API's", "Node JS", "React (vite)"],
+    verificationUrl: "https://www.udemy.com/certificate/UC-47e0aeb2-7452-489d-b085-e61155837be8/",
+    certificateUrl: "https://www.udemy.com/certificate/UC-47e0aeb2-7452-489d-b085-e61155837be8/",
+    logo: "",
+    featured: true,
+  },
 ];
 
 export const education = [
