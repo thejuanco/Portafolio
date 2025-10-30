@@ -1,3 +1,4 @@
+import { Link } from "react-router"
 import { certifications } from "../../../helpers"
 
 export default function CertificationsCard() {
@@ -15,8 +16,23 @@ export default function CertificationsCard() {
                 <div className="grid gap-8 mx-8 md:grid-cols-2">
                     {certifications.map((item, index) => (
                         <div key={index} className="p-8 border border-gray-300 rounded-xl">
-                            <div className="flex justify-center items-center">
+                            <div className="">
                                 <h2 className="font-medium text-lg">{item.title}</h2>
+                                <p className="text-gray-600">{item.issuer}</p>
+                                <div>
+                                    <p>{item.date}</p>
+                                    <span>{item.status}</span>
+                                </div>
+                                <p>{item.description}</p>
+                                <div>
+                                    <p>Habilidades Validadas:</p>
+                                    {item.skills.map((skill, index) => (
+                                        <div key={index} className="">
+                                            <span className="">{skill}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                                <Link>Verficar</Link>
                             </div>
                         </div>
                     ))}
