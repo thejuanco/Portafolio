@@ -53,6 +53,7 @@ const Home = () => {
                 to="https://github.com/thejuanco"
                 className="flex items-center bg-gray-800 text-white font-medium py-2 px-4 rounded-full hover:bg-gray-900 transition-transform duration-300 transform hover:scale-105"
                 target="_blank"
+                rel="noreferrer noopener"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
