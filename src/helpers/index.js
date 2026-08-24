@@ -23,7 +23,7 @@ export const projects = [
     image: "/images/PomodoroZen.png",
     technologies: ["React Native", "React Native Paper", "OpenWeather API"],
     github: "https://github.com/thejuanco/Tiempo-y-Clima.git",
-    demo: "https://weather-dashboard-demo.com",
+    demo: "",
     featured: false,
   },
   {
@@ -31,8 +31,8 @@ export const projects = [
     description: "Sitio web de portafolio personal con diseño responsivo y animaciones suaves.",
     image: "/placeholder.svg?height=200&width=300",
     technologies: ["React", "Tailwind CSS", "Brevo"],
-    github: "https://github.com/usuario/portfolio",
-    demo: "Ya estas aquí",
+    github: "https://github.com/thejuanco/portafolio",
+    demo: "",
     featured: false,
   },
 ];

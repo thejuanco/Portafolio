@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import { projects } from "../../../helpers";
+import { CodeBracketIcon, ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 const Projects = () => {
   return (
@@ -79,17 +80,23 @@ const Projects = () => {
               <div key={index} className="border border-gray-300 rounded-lg p-5">
                 <div className="flex flex-row justify-between space-y-2">
                   <h2 className="font-medium text-lg">{project.title}</h2>
-                    <div className="space-x-2">
-                      <button className="border border-gray-200 px-2 py-1 rounded-full">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                      </svg>
-                      </button>
-                      <button className="border border-gray-200 px-2 py-2 rounded-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
-                        </svg>
-                      </button>
+                    <div className="flex justify-center items-center space-x-2">
+                      <Link
+                        to={project.github}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="border border-gray-200 px-2 py-2 rounded-full hover:bg-gray-100 hover:cursor-pointer"
+                      >
+                        <ArrowTopRightOnSquareIcon className="size-5"/>
+                      </Link>
+                      <Link
+                        to={project.github}
+                        target="_blank"
+                        rel="noreferrer noopener" 
+                        className="border border-gray-200 px-2 py-2 rounded-full hover:bg-gray-100 hover:cursor-pointer"
+                      >
+                        <CodeBracketIcon className="size-5"/>
+                      </Link>
                     </div>
                 </div>
                 <p className="text-gray-500">{project.description}</p>
