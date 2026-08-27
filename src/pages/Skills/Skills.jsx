@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../../components/NavBar";
 import SkillBadget from "./components/SkillBadget";
+import WorkplaceSkills from "./components/WorkplaceSkills";
 
 export default function Skills() {
   return (
@@ -22,6 +23,7 @@ export default function Skills() {
               Tecnologías y herramientas que domino, organizadas por área de especialización
             </p>
           </div>
+          <WorkplaceSkills/>
         </div>
       </div>
     </div>

@@ -1,3 +1,9 @@
+import { 
+  CodeBracketIcon,
+  UserIcon,
+  WrenchIcon
+} from "@heroicons/react/24/outline";
+
 export const projects = [
   {
     title: "Moneta-Flow",
@@ -103,4 +109,50 @@ export const education = [
     skills: ["Programación", "Bases de Datos", "Algoritmos", "Redes", "Arquitectura de Software"],
     logo: "/placeholder.svg?height=60&width=60&text=UTN",
   },
+]
+
+export const workplaceSkills = [
+  {
+    icon: CodeBracketIcon,
+    category: "Lenguajes",
+    description: "Dominio de lenguajes para construir soluciones sólidas",
+    skills: 
+    [
+      "Javascript",
+      "Typescript",
+      "Python",
+      "C#",
+      "SQL"
+    ]
+  },
+  { 
+    icon: UserIcon,
+    category: "Habilidades técnicas",
+    description: "Dominio de lenguajes para construir soluciones sólidas",
+    skills: 
+    [
+      "React/Next.js",
+      "Node js",
+      "APIs REST",
+      "Git/GitHub",
+      "Base de datos",
+      "Response Design",
+      "Metodologías Ágiles"
+    ]
+  },
+  {
+    icon: WrenchIcon,
+    category: "Habilidades generales",
+    description: "Compentencias que fortalecen cada proyecto y equipo",
+    skills:
+    [
+      "Comunicación Efectiva",
+      "Trabajo en equipo",
+      "Resolución de Problemas",
+      "Pensamiento Critico",
+      "Adaptabilidad",
+      "Organización",
+      "Aprendizaje continuo"
+    ]
+  }
 ]
