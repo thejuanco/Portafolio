@@ -13,7 +13,7 @@ export default function WorkplaceSkills() {
                                 <Icon className="w-7 h-7"/>
                             </span>
                         </div>
-                        <h2 className="text-start font-semibold text-2xl">{skill.category}</h2>
+                        <h2 className="text-start font-semibold text-2xl tracking-tighter">{skill.category}</h2>
                         <p className="text-start text-gray-500">{skill.description}</p>
                         <div className="flex flex-wrap gap-2 mt-2 p-2">
                             {skill.skills.map((tSkill, index) => (
